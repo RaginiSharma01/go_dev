@@ -15,7 +15,7 @@ type User struct {
 func main() {
 	http.HandleFunc("/users/", func(w http.ResponseWriter, r *http.Request) {
 
-		switch r.Method {
+		switch r.Method { // specified method ( weather its a get , put, patch , delete)
 
 		case http.MethodGet:
 			id := strings.TrimPrefix(r.URL.Path, "/users/")
