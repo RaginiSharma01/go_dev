@@ -5,7 +5,7 @@ import (
 	"sync"
 )
 
-func worker(i int, wg *sync.WaitGroup) { // we r passing reference so we need to pass the address bleow
+func worker(i int, wg *sync.WaitGroup) { // we r passing reference so we need to pass the address below
 
 	fmt.Printf("worker %d started\n", i)
 	// some task!
