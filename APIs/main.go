@@ -5,6 +5,8 @@ import (
 	"net/http"
 	"strconv"
 	"strings"
+
+	"apiwithparameters/posts"
 )
 
 type User struct {
@@ -67,6 +69,6 @@ func main() {
 			http.Error(w, "method not allowed", http.StatusMethodNotAllowed)
 		}
 	})
-
+	posts.RegisterRoute()
 	http.ListenAndServe(":8080", nil)
 }
