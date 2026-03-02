@@ -21,5 +21,5 @@ func main() {
 	go sayHi()
 
 	time.Sleep(2000 * time.Millisecond)
-	// sync waith group
+	// sync wait group
 }
